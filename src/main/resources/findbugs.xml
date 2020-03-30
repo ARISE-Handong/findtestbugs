@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FindbugsPlugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="findbugsplugin.xsd"
+        pluginid="com.github.spotbugs.spotbugs-archetype">
+
+        <!--<Detector class="com.github.spotbugs.MyDetector" reports="MY_BUG" speed="fast" />-->
+
+        <!--<BugPattern abbrev="MY" type="MY_BUG" category="CORRECTNESS" />-->
+
+    <Detector class="com.github.spotbugs.MavenTestClassNameDetector" reports="TEST_CLASS_NAME_NOT_DEFAULT" speed="fast" />
+
+    <Detector class="com.github.spotbugs.JUnitMissingFailDetector" reports="TEST_MISSING_FAIL" speed="fast" />
+
+    <Detector class="com.github.spotbugs.JUnitMissingJoinDetector" reports="TEST_MISSING_JOIN" speed="fast" />
+
+    <Detector class="com.github.spotbugs.DatabaseDropMissingDetector" reports="TEST_DB_DROP_MISSING" speed="fast" />
+
+    <Detector class="com.github.spotbugs.JUnitUnexpectedThrowDetector" reports="TEST_UNEXPECTED_THROW" speed="fast" />
+
+    <Detector class="com.github.spotbugs.JUnitNoTearDownDetector" reports="TEST_NO_TEAR_DOWN" speed="fast" />
+
+    <Detector class="com.github.spotbugs.JUnitPathSeparatorDetector" reports="TEST_PATH_SEPARATOR" speed="fast" />
+
+    <Detector class="com.github.spotbugs.JUnitClassMemberNotNullDetector" reports="TEST_CLASS_MEMBER_NOT_NULL" speed="fast" />
+
+    <BugPattern abbrev="TEST" type="TEST_CLASS_NAME_NOT_DEFAULT" category="CORRECTNESS" />
+
+    <BugPattern abbrev="TEST" type="TEST_MISSING_FAIL" category="CORRECTNESS" />
+
+    <BugPattern abbrev="TEST" type="TEST_MISSING_JOIN" category="CORRECTNESS" />
+
+    <BugPattern abbrev="TEST" type="TEST_DB_DROP_MISSING" category="CORRECTNESS" />
+
+    <BugPattern abbrev="TEST" type="TEST_UNEXPECTED_THROW" category="CORRECTNESS" />
+
+    <BugPattern abbrev="TEST" type="TEST_PATH_SEPARATOR" category="CORRECTNESS" />
+
+    <BugPattern abbrev="TEST" type="TEST_NO_TEAR_DOWN" category="CORRECTNESS" />
+
+    <BugPattern abbrev="TEST" type="TEST_CLASS_MEMBER_NOT_NULL" category="CORRECTNESS" />
+
+</FindbugsPlugin>

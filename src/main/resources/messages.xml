@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MessageCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="messagecollection.xsd">
+
+  <Plugin>
+    <ShortDescription>My SpotBugs Plugin</ShortDescription>
+    <Details>This plugin provides original detectors</Details>
+  </Plugin>
+  <Detector class="com.github.spotbugs.MavenTestClassNameDetector">
+    <Details>
+      Original detector to detect MY_BUG bug pattern.
+      MavenTestClassNameDetector
+    </Details>
+  </Detector>
+
+  <Detector class="com.github.spotbugs.JUnitMissingFailDetector">
+    <Details>
+      Original detector to detect MY_BUG bug pattern.
+      JUnitMissingFailDetector
+    </Details>
+  </Detector>
+
+  <Detector class="com.github.spotbugs.JUnitMissingJoinDetector">
+    <Details>
+      Original detector to detect MY_BUG bug pattern.
+      JUnitMissingJoinDetector
+    </Details>
+  </Detector>
+
+  <Detector class="com.github.spotbugs.DatabaseDropMissingDetector">
+    <Details>
+      Original detector to detect MY_BUG bug pattern.
+      DatabaseDropMissingDetector
+    </Details>
+  </Detector>
+
+  <Detector class="com.github.spotbugs.JUnitUnexpectedThrowDetector">
+    <Details>
+      Original detector to detect MY_BUG bug pattern.
+      JUnitUnexpectedThrowDetector
+    </Details>
+  </Detector>
+
+  <Detector class="com.github.spotbugs.JUnitNoTearDownDetector">
+    <Details>
+      Original detector to detect MY_BUG bug pattern.
+      JUnitNoTearDownDetector
+    </Details>
+  </Detector>
+
+  <Detector class="com.github.spotbugs.JUnitPathSeparatorDetector">
+    <Details>
+      Original detector to detect MY_BUG bug pattern.
+      JUnitPathSeparatorDetector
+    </Details>
+  </Detector>
+
+  <Detector class="com.github.spotbugs.JUnitClassMemberNotNullDetector">
+    <Details>
+      Original detector to detect MY_BUG bug pattern.
+      JUnitClassMemberNotNullDetector
+    </Details>
+  </Detector>
+
+  <!--<BugPattern type="MY_BUG">-->
+    <!--<ShortDescription>Explain bug pattern shortly.</ShortDescription>-->
+    <!--<LongDescription>-->
+      <!--Explain existing problem in code, and how developer should improve their implementation.-->
+    <!--</LongDescription>-->
+    <!--<Details>-->
+<!--<![CDATA[-->
+<!--<p>Explain existing problem in code, and how developer should improve their implementation.</p>-->
+<!--]]>-->
+    <!--</Details>-->
+  <!--</BugPattern>-->
+
+  <BugPattern type="TEST_CLASS_NAME_NOT_DEFAULT">
+    <ShortDescription>Explain bug pattern shortly.</ShortDescription>
+    <LongDescription>
+      Explain existing problem in code, and how developer should improve their implementation.
+    </LongDescription>
+    <Details>
+      <![CDATA[
+<p>Explain existing problem in code, and how developer should improve their implementation.</p>
+]]>
+    </Details>
+  </BugPattern>
+
+  <BugPattern type="TEST_MISSING_FAIL">
+    <ShortDescription>Explain bug pattern shortly.</ShortDescription>
+    <LongDescription>
+      Explain existing problem in code, and how developer should improve their implementation.
+    </LongDescription>
+    <Details>
+      <![CDATA[
+<p>Explain existing problem in code, and how developer should improve their implementation.</p>
+]]>
+    </Details>
+  </BugPattern>
+  <BugPattern type="TEST_MISSING_JOIN">
+    <ShortDescription>Explain bug pattern shortly.</ShortDescription>
+    <LongDescription>
+      Explain existing problem in code, and how developer should improve their implementation.
+    </LongDescription>
+    <Details>
+      <![CDATA[
+<p>Explain existing problem in code, and how developer should improve their implementation.</p>
+]]>
+    </Details>
+  </BugPattern>
+
+  <BugPattern type="TEST_DB_DROP_MISSING">
+    <ShortDescription>Explain bug pattern shortly.</ShortDescription>
+    <LongDescription>
+      Explain existing problem in code, and how developer should improve their implementation.
+    </LongDescription>
+    <Details>
+      <![CDATA[
+<p>Explain existing problem in code, and how developer should improve their implementation.</p>
+]]>
+    </Details>
+  </BugPattern>
+
+  <BugPattern type="TEST_UNEXPECTED_THROW">
+    <ShortDescription>ETEST_UNEXPECTED_THROW</ShortDescription>
+    <LongDescription>
+      Explain existing problem in code, and how developer should improve their implementation.
+    </LongDescription>
+    <Details>
+      <![CDATA[
+<p>Explain existing problem in code, and how developer should improve their implementation.</p>
+]]>
+    </Details>
+  </BugPattern>
+
+  <BugPattern type="TEST_NO_TEAR_DOWN">
+    <ShortDescription>TEST_NO_TEAR_DOWN</ShortDescription>
+    <LongDescription>
+      Explain existing problem in code, and how developer should improve their implementation.
+    </LongDescription>
+    <Details>
+      <![CDATA[
+<p>Explain existing problem in code, and how developer should improve their implementation.</p>
+]]>
+    </Details>
+  </BugPattern>
+  <BugPattern type="TEST_PATH_SEPARATOR">
+    <ShortDescription>TEST_PATH_SEPARATOR</ShortDescription>
+    <LongDescription>
+      Explain existing problem in code, and how developer should improve their implementation.
+    </LongDescription>
+    <Details>
+      <![CDATA[
+<p>Explain existing problem in code, and how developer should improve their implementation.</p>
+]]>
+    </Details>
+  </BugPattern>
+
+  <BugPattern type="TEST_CLASS_MEMBER_NOT_NULL">
+    <ShortDescription>TEST_CLASS_MEMBER_NOT_NULL</ShortDescription>
+    <LongDescription>
+      Explain existing problem in code, and how developer should improve their implementation.
+    </LongDescription>
+    <Details>
+      <![CDATA[
+<p>Explain existing problem in code, and how developer should improve their implementation.</p>
+]]>
+    </Details>
+  </BugPattern>
+</MessageCollection>
